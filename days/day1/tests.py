@@ -2,7 +2,7 @@ import os
 import unittest
 
 from utils.io import readfile
-from days.day1.solution import solution_part_one, solution_part_two
+from days.day1.solution import solve_part_one, solve_part_two
 
 
 class Tests(unittest.TestCase):
@@ -11,10 +11,10 @@ class Tests(unittest.TestCase):
         self.assertEqual(solution(input), result)
 
     def test_part_one(self):
-        self._assertValue(solution_part_one, 11)
+        self._assertValue(solve_part_one, 11)
 
     def test_part_two(self):
-        self._assertValue(solution_part_two, 31)
+        self._assertValue(solve_part_two, 31)
 
 
 

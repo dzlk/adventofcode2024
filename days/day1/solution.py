@@ -8,13 +8,13 @@ from utils.io import readfile
 
 @click.command()
 @click.argument('pzl', type=click.Path())
-def day1(pzl):
+def run_day1(pzl):
     input = readfile(pzl)
-    print("Result part one: " + str(solution_part_one(input)) + "\n")
-    print("Result part two: " + str(solution_part_two(input)) + "\n")
+    print("Result part one: " + str(solve_part_one(input)) + "\n")
+    print("Result part two: " + str(solve_part_two(input)) + "\n")
 
 
-def solution_part_one(input: list[str]):
+def solve_part_one(input: list[str]):
     left: list[int] = []
     right: list[int] = []
     for ps in input:
@@ -33,7 +33,7 @@ def solution_part_one(input: list[str]):
     return result
 
 
-def solution_part_two(input: list[str]):
+def solve_part_two(input: list[str]):
     left: list[int] = []
     right: Counter[int] = Counter()
 
