@@ -107,7 +107,7 @@ def solve_part_one(input: list[str]) -> int:
                     if check_xmas(p, d[0], d[1]):
                         state.found()
 
-            # print_data(screen, state, p)
+            print_data(screen, state, p)
 
             ev = screen.get_key()
             if ev in (ord('Q'), ord('q')):
@@ -152,7 +152,7 @@ def solve_part_two(input: list[str]):
                 if check_xmas(p):
                     state.found()
 
-            # print_data(screen, state, p)
+            print_data(screen, state, p)
 
             ev = screen.get_key()
             if ev in (ord('Q'), ord('q')):
