@@ -1,8 +1,8 @@
-import days.day6.solution as day6
+from days.day7.solution import run_day
 
 
 def init():
-    day6.run_day6()
+    run_day()
 
 
 if __name__ == '__main__':
