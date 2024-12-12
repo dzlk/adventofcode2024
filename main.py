@@ -1,4 +1,4 @@
-from days.day11.solution import run_day
+from days.day12.solution import run_day
 
 
 def init():
