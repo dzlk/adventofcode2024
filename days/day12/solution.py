@@ -177,7 +177,6 @@ def find_region(board, point, target):
     return points
 
 
-
 def print_board(b, rm, ps):
     text = Text()
     for y, line in enumerate(b):
